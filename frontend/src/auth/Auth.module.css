@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.leftPanel {
+  width: 40%;
+  background-color: var(--jet);
+  color: var(--white);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.leftFooter {
+  color: var(--silver);
+  font-size: 14px;
+}
+
+.rightPanel {
+  flex: 1;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 360px;
+}
+
+.title {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--jet);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.showPasswordBtn {
+  position: absolute;
+  right: 12px;
+  top: 32px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: var(--slate);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.showPasswordBtn:hover {
+  color: var(--jet);
+}
+
+.error {
+  color: var(--coral);
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.link {
+  color: var(--slate);
+  font-size: 14px;
+}
+
+.link:hover {
+  color: var(--coral);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .leftPanel {
+    width: 100%;
+    padding: 16px 24px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    display: none;
+  }
+}

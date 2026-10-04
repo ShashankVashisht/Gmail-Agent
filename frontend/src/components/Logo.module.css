@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text {
+  font-family: 'Newsreader', serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: inherit;
+}
+
+.mark {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.arc1, .arc2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--coral);
+  border-bottom: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+
+.arc1 {
+  width: 24px;
+  height: 24px;
+  top: 2px;
+  left: 2px;
+}
+
+.arc2 {
+  width: 14px;
+  height: 14px;
+  top: 7px;
+  left: 7px;
+}

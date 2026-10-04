@@ -1,0 +1,95 @@
+.composerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px 24px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.emptyText {
+  color: var(--jet);
+  font-size: 14px;
+}
+
+.prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.promptBtn {
+  background: transparent;
+  border: 1px solid var(--silver);
+  color: var(--slate);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 120ms ease-in-out;
+  text-align: left;
+}
+
+.promptBtn:hover {
+  border-color: var(--coral);
+  color: var(--jet);
+}
+
+.container {
+  position: relative;
+  border: 1px solid var(--silver);
+  border-radius: 4px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 120ms ease;
+}
+
+.container:focus-within {
+  border-color: var(--coral);
+  box-shadow: 0 0 0 1px var(--coral);
+}
+
+.textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  padding: 12px 12px 40px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--jet);
+  background: transparent;
+  line-height: 1.5;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.counter {
+  font-size: 12px;
+  color: var(--slate);
+}
+
+.sendBtn {
+  padding: 6px;
+  border-radius: 4px;
+}

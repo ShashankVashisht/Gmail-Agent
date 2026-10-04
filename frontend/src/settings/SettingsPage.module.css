@@ -1,0 +1,145 @@
+.container {
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--silver);
+  padding: 24px;
+}
+
+.headerInner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--slate);
+  font-size: 14px;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.backBtn:hover {
+  color: var(--coral);
+}
+
+.title {
+  font-family: 'Newsreader', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--jet);
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.successBanner {
+  background-color: #e6f4ea;
+  color: #137333;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: -16px;
+}
+
+.errorBanner {
+  background-color: #fce8e1;
+  color: var(--coral);
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: -16px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--slate);
+  margin: 0;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--silver);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--slate);
+  margin-bottom: 4px;
+}
+
+.value {
+  font-size: 14px;
+  color: var(--jet);
+  font-weight: 500;
+}
+
+.gmailHeader {
+  padding: 20px;
+  border-bottom: 1px solid rgba(191, 192, 192, 0.3);
+}
+
+.gmailTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gmailTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--jet);
+  margin: 0;
+}
+
+.gmailContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.5;
+  margin: 0;
+}
